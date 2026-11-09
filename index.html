@@ -234,8 +234,11 @@ details li img,.mini{width:52px;height:52px}.ip{font-size:19px}
 .wpp{margin-top:20px}.wpp b{font-size:26px}
 
 html{scroll-padding-top:96px}.escolha{scroll-margin-top:90px}.marca{scroll-margin-top:90px}
+
+.inicio{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;font-weight:800;font-size:19px;padding:0 20px;height:52px;border-radius:14px;flex:0 0 auto}.inicio:active{transform:translateY(2px)}
+@media(max-width:720px){.inicio{height:46px;padding:0 14px;font-size:18px}.srch{flex:1 1 120px;min-width:0}.srch input{padding:12px 14px;font-size:17px}}
 </style></head><body>
-<header class="top" id="topbar"><div class="tw"><a class="brand" href="#topo"><img src="logos/essencial.png" alt="Essencial Distribuidora"></a>
+<header class="top" id="topbar"><div class="tw"><a class="inicio" href="#topo" aria-label="Voltar ao início"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg><span>Início</span></a>
 <div class="srch"><input id="q" type="search" placeholder="Buscar produto..." autocomplete="off" aria-label="Buscar produto"></div>
 <div class="tools"><button id="aminus" aria-label="Diminuir letras">A&minus;</button><button id="aplus" aria-label="Aumentar letras">A+</button></div></div>
 </header>
