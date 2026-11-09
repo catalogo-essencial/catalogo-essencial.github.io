@@ -113,6 +113,21 @@ body{overflow-x:hidden}.grid>*,.kt>*{min-width:0}.card .bd h4,.it b{overflow-wra
 .mh h2{font-weight:800;text-transform:none;letter-spacing:-.3px;font-size:30px}
 @media print{.cv a.cb.sq{padding:12px 14px}.cv a.cb.sq .cl{padding:4px}}
 
+/* ===== Quem somos ===== */
+.quem{background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px 36px;margin:10px 0 40px}
+.quem .ey{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold2);font-weight:800;margin-bottom:10px}
+.quem h2{font-size:clamp(28px,4.6vw,44px);line-height:1.1;font-weight:800;letter-spacing:-.6px;margin-bottom:22px}
+.qgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:34px;align-items:start}
+.qtxt p{font-size:18px;line-height:1.65;margin-bottom:14px;color:#2a2733}.qtxt .lead{font-size:22px;font-weight:700;color:var(--ink);line-height:1.4}
+.qtxt .zl{background:#f6efe0;border-left:5px solid var(--gold);padding:14px 18px;border-radius:12px}
+.qnum{display:grid;grid-template-columns:1fr 1fr;gap:12px}.qnum div{background:#faf6ee;border:1px solid var(--line);border-radius:16px;padding:18px 16px;text-align:center}
+.qnum b{display:block;font-size:40px;font-weight:800;color:var(--gold2);line-height:1}.qnum span{display:block;font-size:14.5px;margin-top:8px;color:#3a3744;line-height:1.3}
+@media(max-width:820px){.quem{padding:24px 18px}.qgrid{grid-template-columns:1fr;gap:22px}}
+@media print{.quem{break-before:page;break-after:page;margin:0;padding:10px 6px;border:0}.qgrid{grid-template-columns:1fr;gap:20px}.quem h2{font-size:44px}.qtxt p{font-size:21px}.qtxt .lead{font-size:26px}.qnum{grid-template-columns:repeat(4,1fr)}.qnum b{font-size:34px}.qnum span{font-size:15px}.cb.qs{grid-column:1/-1;justify-content:center;background:var(--ink);color:#fff;border-color:var(--ink)}.cb.qs .ct b{font-size:30px;color:#fff}.cv a.cb.qs{padding:18px 20px}}
+.qimg{display:block;width:100%;max-height:380px;object-fit:cover;border-radius:18px;margin:0 0 24px}
+@media print{.qimg{max-height:300px}}
+@media print{.quem{padding:0}.qimg{max-height:210px;margin-bottom:16px}.quem h2{font-size:38px;margin-bottom:14px}.qtxt p{font-size:19px;line-height:1.5;margin-bottom:10px}.qtxt .lead{font-size:23px}.qtxt .zl{padding:10px 14px}.qgrid{gap:14px}.qnum div{padding:12px 8px}.qnum b{font-size:30px}.qnum span{font-size:13.5px}}
+
 /* ===== versão web: letras grandes, alto contraste, fácil de tocar ===== */
 :root{--mute:#4f4b59;--gold2:#7d5c1c;--ink:#16141d;--line:#dcd5c6}
 body{font-size:18px;line-height:1.5}
@@ -176,13 +191,36 @@ details li img,.mini{width:52px;height:52px}.ip{font-size:19px}
 @media print{.tools,.totop,.pdfbtn{display:none}}
 @media(min-width:721px){.tiles{grid-template-columns:repeat(2,1fr);max-width:920px}.tile .ct b{font-size:30px}}
 .tile .ct{overflow-wrap:normal}
+
+/* ===== web: bem-vindo + quem somos ===== */
+.hero{padding-bottom:10px}.two{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.bigbtn{display:inline-flex;align-items:center;justify-content:center;min-width:240px;padding:20px 32px;font-size:24px;font-weight:800;border-radius:18px;text-decoration:none;background:var(--ink);color:#fff;border:3px solid var(--ink);box-shadow:0 6px 0 #000;transition:.15s}.bigbtn:active{transform:translateY(3px);box-shadow:0 2px 0 #000}
+.bigbtn.alt{background:#fff;color:var(--ink);box-shadow:0 6px 0 var(--line);border-color:var(--ink)}
+.quem{margin-top:34px;padding:42px 44px;border-radius:28px}.quem .ey{font-size:16px}.quem h2{font-size:clamp(32px,5vw,50px)}
+.qtxt p{font-size:21px;line-height:1.7}.qtxt .lead{font-size:26px}.qnum b{font-size:48px}.qnum span{font-size:17px}
+.escolha{text-align:center;padding-top:34px;scroll-margin-top:150px}.escolha .eh{font-size:clamp(36px,6vw,58px);font-weight:800;letter-spacing:-1px;line-height:1.05}.escolha .sub{font-size:22px;margin:12px auto 26px;color:var(--ink);max-width:640px}
+@media(max-width:720px){.quem{padding:24px 18px}.qtxt p{font-size:19px}.qtxt .lead{font-size:23px}.qnum b{font-size:40px}.bigbtn{min-width:0;width:100%;font-size:22px}}
+@media print{.quem{margin:0}}
 </style></head><body>
 <header class="top" id="topbar"><div class="tw"><a class="brand" href="#topo"><img src="logos/essencial.png" alt="Essencial Distribuidora"></a>
 <div class="srch"><input id="q" type="search" placeholder="Buscar produto..." autocomplete="off" aria-label="Buscar produto"></div>
 <div class="tools"><button id="aminus" aria-label="Diminuir letras">A&minus;</button><button id="aplus" aria-label="Aumentar letras">A+</button></div></div>
 <nav class="bn" aria-label="Marcas"><a class="" href="#m-cadiveu"><img src="logos/cadiveu.svg" alt="Cadiveu"></a><a class="sq" href="#m-amend"><img src="logos/amend.png" alt="Amend"></a><a class="" href="#m-nuance"><img src="logos/nuance.png" alt="Nuance"></a><a class="" href="#m-robson-peluquero"><img src="logos/robson-peluquero.png" alt="Robson Peluquero"></a><a class="" href="#m-luminosittà"><img src="logos/luminosittà.png" alt="Luminosittà"></a><a class="sq" href="#m-elegance"><img src="logos/elegance.png" alt="Elegance"></a></nav></header>
 <main><section class="hero" id="topo"><img class="big" src="logos/essencial.png" alt="Essencial Distribuidora de Cosméticos">
-<p class="ey">Catálogo para salões</p><h1>Escolha a marca</h1><p class="sub">Toque na marca para ver os produtos e os valores.</p>
+<p class="ey">Catálogo para salões</p><h1>Bem-vindo</h1><p class="sub">Conheça a nossa história e escolha a marca para ver os produtos e os valores.</p>
+<div class="two"><a class="bigbtn" href="#quem">Quem somos</a><a class="bigbtn alt" href="#marcas">Ver as marcas</a></div></section>
+<section class="quem" id="quem"><p class="ey">Quem somos</p><h2>Uma história de família dentro dos salões</h2>
+<img class="qimg" src="quem-estoque.jpg" alt="Nosso estoque organizado de cosméticos profissionais">
+<div class="qgrid"><div class="qtxt">
+<p class="lead">A Essencial Distribuidora de Cosméticos nasceu em família e cresceu ao lado dos salões de beleza.</p>
+<p>Fomos fundados pelos pais do nosso diretor, Thiago Valerini, que cresceu dentro da distribuidora: começou aos 12 anos no estoque e passou pelo faturamento, pelas compras e pela administração antes de assumir a direção, em 2013.</p>
+<p>Hoje, na segunda geração, seguimos com o mesmo jeito de trabalhar: conhecer o salão, entender o que ele precisa e entregar produto de qualidade, com preço justo e atendimento de verdade.</p>
+<p>Trabalhamos com mais de 1.000 itens de marcas que o profissional conhece e confia: Cadiveu, Amend, Nuance, Robson Peluquero, Luminosittà e Elegance.</p>
+<p class="zl"><b>Estamos crescendo na Zona Leste de São Paulo.</b> Estamos abrindo o atendimento para novos salões da região. Se o seu salão ainda não é cliente, será um prazer atender você.</p>
+</div>
+<div class="qnum"><div><b>+18</b><span>anos de atuação no mercado de cosméticos profissionais</span></div><div><b>+7 mil</b><span>salões atendidos</span></div><div><b>+1.000</b><span>itens de cosméticos profissionais</span></div><div><b>2ª</b><span>geração de uma empresa de família</span></div></div></div></section>
+
+<section class="escolha" id="marcas"><h2 class="eh">Escolha a marca</h2><p class="sub">Toque na marca para ver os produtos e os valores.</p>
 <div class="tiles"><a class="tile" href="#m-cadiveu"><span class="cl"><img src="logos/cadiveu.svg" alt="Cadiveu"></span><span class="ct"><b>Cadiveu</b></span></a><a class="tile sq" href="#m-amend"><span class="cl"><img src="logos/amend.png" alt="Amend"></span><span class="ct"><b>Amend</b></span></a><a class="tile" href="#m-nuance"><span class="cl"><img src="logos/nuance.png" alt="Nuance"></span><span class="ct"><b>Nuance</b></span></a><a class="tile" href="#m-robson-peluquero"><span class="cl"><img src="logos/robson-peluquero.png" alt="Robson Peluquero"></span><span class="ct"><b>Robson Peluquero</b></span></a><a class="tile" href="#m-luminosittà"><span class="cl"><img src="logos/luminosittà.png" alt="Luminosittà"></span><span class="ct"><b>Luminosittà</b></span></a><a class="tile sq" href="#m-elegance"><span class="cl"><img src="logos/elegance.png" alt="Elegance"></span><span class="ct"><b>Elegance</b></span></a></div>
 <div class="seg" id="seg"><button data-f="all" class="on">Tudo</button><button data-f="pro">Profissional</button><button data-f="home">Home Care</button></div>
 <a class="pdfbtn" href="catalogo-essencial.pdf" download>Baixar catálogo em PDF</a></section>
